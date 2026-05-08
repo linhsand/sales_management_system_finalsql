@@ -12,13 +12,14 @@ National Economics University · College of Technology · DATCOM Lab
 | Project Title | Sales Management System |
 | Course | Database Management System (MySQL) |
 | Institution | National Economics University (NEU) |
-| Faculty | College of Technology — DATCOM Lab |
 | Instructor | hung.tran@neu.edu.vn |
-| Student Name | *(fill in your name)* |
-| Student ID | *(fill in your student ID)* |
-| Class | *(fill in your class)* |
+| Student Name | Vu Tran Cat Linh |
+| Student ID | 11245899 |
+| Class | DSEB 66B |
 | Academic Year | 2025 – 2026 |
 | GitHub | https://github.com/linhsand/sales_management_system_finalsql |
+| Youtube (video demo) | _____link___ |
+
 
 ---
 
