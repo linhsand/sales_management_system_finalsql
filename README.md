@@ -16,6 +16,7 @@ National Economics University · College of Technology · DATCOM Lab
 | Student Name | Vu Tran Cat Linh |
 | Student ID | 11245899 |
 | Class | DSEB 66B |
+
 | Academic Year | 2025 – 2026 |
 | GitHub | https://github.com/linhsand/sales_management_system_finalsql |
 | Youtube (video demo) | _____link___ |
@@ -97,7 +98,8 @@ sales_management_system_finalsql/
 │
 ├── SQL_files/
 │   ├── schema.sql             # Database and table creation
-│   ├── insert_data.sql        # Sample data (5–10 records per table)
+│   ├── insert_data.sql        # Sample data
+
 │   ├── advanced.sql           # Indexes, triggers, views, UDF, procedure
 │   └── security_and_optimization.sql  # Users, roles, EXPLAIN
 │
