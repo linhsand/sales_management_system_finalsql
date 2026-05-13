@@ -3,18 +3,18 @@ from tkinter import ttk, messagebox, font
 from db_connection import get_connection
 
 # ─── THEME ────────────────────────────────────────────────────────────────────
-BG        = "#0f1117"
-PANEL     = "#1a1d27"
-CARD      = "#22263a"
-ACCENT    = "#4f8ef7"
-ACCENT2   = "#7c3aed"
-SUCCESS   = "#22c55e"
-WARNING   = "#f59e0b"
-DANGER    = "#ef4444"
-TEXT      = "#e8eaf0"
-SUBTEXT   = "#8891a8"
-BORDER    = "#2e3250"
-ENTRY_BG  = "#181c2e"
+BG        = "#1a0a10"   # deep rose-black background
+PANEL     = "#2b1120"   # dark magenta panel
+CARD      = "#3d1a2e"   # rich plum card
+ACCENT    = "#f472b6"   # hot pink accent
+ACCENT2   = "#c084fc"   # soft lavender-purple accent
+SUCCESS   = "#f9a8d4"   # blush pink for success
+WARNING   = "#fbbf24"   # warm amber (kept for contrast)
+DANGER    = "#fb7185"   # rose-red danger
+TEXT      = "#fce7f3"   # light pink-white text
+SUBTEXT   = "#c084a0"   # muted rose subtext
+BORDER    = "#6b2147"   # deep rose border
+ENTRY_BG  = "#120810"   # near-black with pink tint entry bg
 
 NAV_W = 200
 
@@ -51,9 +51,9 @@ def styled_btn(parent, text, cmd, color=ACCENT, width=14):
     return b
 
 def _lighten(hex_color):
-    mapping = {ACCENT: "#6ba3ff", ACCENT2: "#9d5cff",
-               SUCCESS: "#4ade80", WARNING: "#fbbf24",
-               DANGER: "#f87171", "#555": "#777"}
+    mapping = {ACCENT: "#f9a8d4", ACCENT2: "#d8b4fe",
+               SUCCESS: "#fecdd3", WARNING: "#fde68a",
+               DANGER: "#fda4af", "#555": "#7c3a5a"}
     return mapping.get(hex_color, hex_color)
 
 def styled_entry(parent, width=22, show=None):
@@ -76,22 +76,22 @@ def card_label(parent, text, size=11, color=TEXT, bold=False):
 def make_table(parent, columns, height=12):
     style = ttk.Style()
     style.theme_use("clam")
-    style.configure("Dark.Treeview",
+    style.configure("Pink.Treeview",
                     background=CARD, fieldbackground=CARD,
                     foreground=TEXT, rowheight=28,
                     font=("Consolas", 10))
-    style.configure("Dark.Treeview.Heading",
+    style.configure("Pink.Treeview.Heading",
                     background=PANEL, foreground=ACCENT,
                     font=("Consolas", 10, "bold"), relief="flat")
-    style.map("Dark.Treeview",
+    style.map("Pink.Treeview",
               background=[("selected", ACCENT)],
-              foreground=[("selected", "white")])
+              foreground=[("selected", "#1a0a10")])
 
     frame = tk.Frame(parent, bg=CARD)
     sv = ttk.Scrollbar(frame, orient="vertical")
     sh = ttk.Scrollbar(frame, orient="horizontal")
     tree = ttk.Treeview(frame, columns=columns, show="headings",
-                        style="Dark.Treeview", height=height,
+                        style="Pink.Treeview", height=height,
                         yscrollcommand=sv.set, xscrollcommand=sh.set)
     sv.config(command=tree.yview)
     sh.config(command=tree.xview)
