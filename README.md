@@ -1,8 +1,7 @@
 # Sales Management System
 
 **Project 03 — Database Management System**
-National Economics University · College of Technology · DATCOM Lab
-
+National Economics University 
 ---
 
 ## Project Information
