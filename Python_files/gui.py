@@ -3,18 +3,18 @@ from tkinter import ttk, messagebox, font
 from db_connection import get_connection
 
 # ─── THEME ────────────────────────────────────────────────────────────────────
-BG        = "#1a0a10"   # deep rose-black background
-PANEL     = "#2b1120"   # dark magenta panel
-CARD      = "#3d1a2e"   # rich plum card
-ACCENT    = "#f472b6"   # hot pink accent
-ACCENT2   = "#c084fc"   # soft lavender-purple accent
-SUCCESS   = "#f9a8d4"   # blush pink for success
-WARNING   = "#fbbf24"   # warm amber (kept for contrast)
-DANGER    = "#fb7185"   # rose-red danger
-TEXT      = "#fce7f3"   # light pink-white text
-SUBTEXT   = "#c084a0"   # muted rose subtext
-BORDER    = "#6b2147"   # deep rose border
-ENTRY_BG  = "#120810"   # near-black with pink tint entry bg
+BG        = "#fff0f5"   # lavender blush background
+PANEL     = "#fce4ec"   # soft pink panel
+CARD      = "#ffffff"   # clean white card
+ACCENT    = "#e91e8c"   # vivid rose accent
+ACCENT2   = "#ab47bc"   # soft violet accent
+SUCCESS   = "#d81b60"   # deep pink for success
+WARNING   = "#f57c00"   # warm orange (kept for contrast)
+DANGER    = "#c62828"   # deep red danger
+TEXT      = "#3b0a24"   # deep rose-black text
+SUBTEXT   = "#ad6c87"   # muted mauve subtext
+BORDER    = "#f48fb1"   # light pink border
+ENTRY_BG  = "#fff8fb"   # near-white with pink tint entry bg
 
 NAV_W = 200
 
@@ -51,9 +51,9 @@ def styled_btn(parent, text, cmd, color=ACCENT, width=14):
     return b
 
 def _lighten(hex_color):
-    mapping = {ACCENT: "#f9a8d4", ACCENT2: "#d8b4fe",
-               SUCCESS: "#fecdd3", WARNING: "#fde68a",
-               DANGER: "#fda4af", "#555": "#7c3a5a"}
+    mapping = {ACCENT: "#f06292", ACCENT2: "#ce93d8",
+               SUCCESS: "#f48fb1", WARNING: "#ffb74d",
+               DANGER: "#ef9a9a", "#555": "#bdbdbd"}
     return mapping.get(hex_color, hex_color)
 
 def styled_entry(parent, width=22, show=None):
@@ -85,7 +85,7 @@ def make_table(parent, columns, height=12):
                     font=("Consolas", 10, "bold"), relief="flat")
     style.map("Pink.Treeview",
               background=[("selected", ACCENT)],
-              foreground=[("selected", "#1a0a10")])
+              foreground=[("selected", "#ffffff")])
 
     frame = tk.Frame(parent, bg=CARD)
     sv = ttk.Scrollbar(frame, orient="vertical")
