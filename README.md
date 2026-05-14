@@ -18,7 +18,7 @@ National Economics University
 
 | Academic Year | 2025 – 2026 |
 | GitHub | https://github.com/linhsand/sales_management_system_finalsql |
-| Youtube (video demo) | _____link___ |
+| Youtube (video demo) | https://youtu.be/-oCVjusYTsI |
 
 
 ---
