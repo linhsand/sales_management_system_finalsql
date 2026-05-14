@@ -11,7 +11,7 @@ National Economics University
 | Project Title | Sales Management System |
 | Course | Database Management System (MySQL) |
 | Institution | National Economics University (NEU) |
-| Instructor | hung.tran@neu.edu.vn |
+| Instructor | TRAN HUNG |
 | Student Name | Vu Tran Cat Linh |
 | Student ID | 11245899 |
 | Class | DSEB 66B |
