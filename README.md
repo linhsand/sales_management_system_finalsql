@@ -281,14 +281,5 @@ mysql -u root -p sales_management < backup_sales_management.sql
 
 ---
 
-## References
-
-- Oracle Corporation. (2024). MySQL 8.0 Reference Manual. https://dev.mysql.com/doc/refman/8.0/en/
-- Python Software Foundation. (2024). Python 3.11 Documentation. https://docs.python.org/3/
-- Oracle Corporation. (2024). MySQL Connector/Python Developer Guide. https://dev.mysql.com/doc/connector-python/en/
-- ERDPlus. (2024). ER Diagram Tool. https://erdplus.com/
-- Oracle Corporation. (2024). MySQL Workbench Manual. https://dev.mysql.com/doc/workbench/en/
-
----
 
 *Project 03 — Sales Management System · NEU College of Technology · May 2026*
